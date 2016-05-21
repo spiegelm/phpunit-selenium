@@ -477,7 +477,6 @@ class Extensions_Selenium2TestCaseTest extends Tests_Selenium2TestCase_BaseTestC
 
     public function testCheckboxesCanBeSelectedAndDeselected()
     {
-        $this->markTestIncomplete("Flaky: fails on clicking in some browsers.");
         $this->url('html/test_check_uncheck.html');
         $beans = $this->byId('option-beans');
         $butter = $this->byId('option-butter');
@@ -611,7 +610,6 @@ class Extensions_Selenium2TestCaseTest extends Tests_Selenium2TestCase_BaseTestC
 
     public function testRadioEventsAreGenerated()
     {
-        $this->markTestIncomplete("Flaky: fails on focus in some browsers.");
         $this->url('html/test_form_events.html');
         $first = $this->byId('theRadio1');
         $second = $this->byId('theRadio2');
@@ -635,7 +633,6 @@ class Extensions_Selenium2TestCaseTest extends Tests_Selenium2TestCase_BaseTestC
 
     public function testCheckboxEventsAreGenerated()
     {
-        $this->markTestIncomplete("Flaky: fails on focus in some browsers.");
         $this->url('html/test_form_events.html');
         $checkbox = $this->byId('theCheckbox');
         $eventLog = $this->byId('eventlog');
